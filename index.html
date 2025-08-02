@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Clone - Audiora Lite</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="icon.png" type="image/png" />
+
+  <!-- Font Awesome for play/pause icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <!-- Background -->
+  <div class="background"></div>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="Audiora Lite Logo" class="logo" />
+    <h1>Audiora Lite</h1>
+  </header>
+
+  <!-- Song List -->
+  <main>
+    <div class="song-list" id="songList">
+      <!-- Songs injected via JavaScript -->
+    </div>
+  </main>
+
+  <!-- Now Playing Bar -->
+  <footer>
+    <div class="now-playing">
+      <img src="covers/1.jpg" id="currentCover" alt="Cover" />
+      <div class="song-info">
+        <h4 id="currentTitle">Select a song</h4>
+        <img src="playing.gif" id="gif" alt="Playing Animation" />
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prev"><i class="fas fa-backward"></i></button>
+      <button id="playPause"><i class="fas fa-play"></i></button>
+      <button id="next"><i class="fas fa-forward"></i></button>
+    </div>
+    <input type="range" id="progressBar" value="0" />
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
